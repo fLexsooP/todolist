@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 mongoose.set("strictQuery", false);
 
-mongoose.connect("mongodb+srv://admin-chence:test123@cluster0.zlg3lpr.mongodb.net/todolistDB");
+mongoose.connect("mongodb+srv://user:password@cluster0.zlg3lpr.mongodb.net/todolistDB");
 
 const itemSchema = {
   name: String,
